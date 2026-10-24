@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-paper text-ink font-sans;
+  }
+  ::selection {
+    @apply bg-vermilion-soft;
+  }
+}
+
+@layer components {
+  /* 徽记印章风格小标 */
+  .seal {
+    @apply inline-flex items-center justify-center rounded border font-serif;
+  }
+  /* 卡片 */
+  .panel {
+    @apply rounded border border-line bg-card shadow-card;
+  }
+  /* 输入框 */
+  .field {
+    @apply w-full rounded border border-line bg-white px-3 py-2 text-sm text-ink
+      placeholder:text-ink-faint focus:border-vermilion focus:outline-none
+      focus:ring-1 focus:ring-vermilion/30 disabled:bg-paper disabled:text-ink-faint;
+  }
+  /* 表单标签 */
+  .label {
+    @apply mb-1 block text-xs font-medium text-ink-soft;
+  }
+  /* 高亮搜索命中 */
+  .hl {
+    @apply rounded-sm bg-gold-soft px-0.5 font-medium text-vermilion-deep;
+  }
+}
+
+/* 滚动条克制化 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-line;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
