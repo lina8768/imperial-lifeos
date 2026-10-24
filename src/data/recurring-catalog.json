@@ -1,0 +1,745 @@
+{
+  "sourceCommit": "e2605d3e2242bd6216c9255192b8a8957a08c55a",
+  "sourceRepo": "eternity4719/HowToLiveBetter",
+  "sourceSyncedAt": "2026-10-24T04:29:55.037Z",
+  "extractedAt": "2026-10-24T05:32:42.751Z",
+  "total": 36,
+  "byFrequency": {
+    "daily": 18,
+    "weekly": 3,
+    "monthly": 0,
+    "yearly": 15
+  },
+  "byPriority": {
+    "high": 29,
+    "medium": 7,
+    "low": 0
+  },
+  "rejected": {
+    "negative": 75,
+    "oneoff": 23,
+    "noFreq": 633
+  },
+  "items": [
+    {
+      "entryId": "ch01-e020",
+      "chapterNumber": 1,
+      "entryNumber": 20,
+      "title": "有心血管病的人和老年人每年打流感疫苗",
+      "plainTalk": "心梗之后打流感疫苗的那项试验里，一年内死亡的比例从 4.9% 降到 2.9%。有心血管病的人和老人，每年秋天补一针，50 到 150 元。",
+      "frequency": "yearly",
+      "node": "year-anytime",
+      "priority": "high",
+      "priorityScore": 4.44,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 0,
+        "willpower": 0,
+        "benefit": 2
+      },
+      "actionLabel": "有心血管病的人和老年人打流感疫苗"
+    },
+    {
+      "entryId": "ch01-e024",
+      "chapterNumber": 1,
+      "entryNumber": 24,
+      "title": "重度吸烟者每年做一次低剂量胸部 CT",
+      "plainTalk": "符合条件的重度吸烟者每年做一次低剂量 CT，死于肺癌的概率比只拍胸片低 20%。总的死亡概率低 6.7%。代价是查出可疑结果后的复查，和那一段时间的提心吊胆。",
+      "frequency": "yearly",
+      "node": "year-anytime",
+      "priority": "high",
+      "priorityScore": 4.44,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 0,
+        "willpower": 0,
+        "benefit": 2
+      },
+      "actionLabel": "重度吸烟者做一次低剂量胸部 CT"
+    },
+    {
+      "entryId": "ch02-e015",
+      "chapterNumber": 2,
+      "entryNumber": 15,
+      "title": "把爬楼梯、快走赶路这类零碎的用力活动攒到每天四五分钟",
+      "plainTalk": "平时完全不锻炼的人，只要每天有三次一两分钟的用力活动，同期死亡的概率就比一点没有的人低约四成，心血管死亡低近一半。用力活动指爬楼梯、快步赶路这类。",
+      "frequency": "daily",
+      "node": "anytime",
+      "priority": "high",
+      "priorityScore": 4.44,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 0,
+        "willpower": 1,
+        "benefit": 2
+      },
+      "actionLabel": "把爬楼梯、快走赶路这类零碎的用力活动攒到四五分钟"
+    },
+    {
+      "entryId": "ch02-e022",
+      "chapterNumber": 2,
+      "entryNumber": 22,
+      "title": "每天吃一小把坚果",
+      "plainTalk": "常吃坚果的人，同期死亡的概率比不吃的人低约两成。一周吃一次就能看出差别，低约一成。吃到每天一把，差别最明显。",
+      "frequency": "daily",
+      "node": "anytime",
+      "priority": "high",
+      "priorityScore": 4.44,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 0,
+        "willpower": 0,
+        "benefit": 2
+      },
+      "actionLabel": "吃一小把坚果"
+    },
+    {
+      "entryId": "ch02-e026",
+      "chapterNumber": 2,
+      "entryNumber": 26,
+      "title": "每天喝三到四杯咖啡，咖啡因总量不超过 400 mg，不加糖不加奶盖",
+      "plainTalk": "每天喝三到四杯咖啡的人，同期死亡的概率比不喝的人低约 17%。另一项研究里，咖啡集中在上午喝的人低约 12%，全天都喝的人看不出差别。一杯咖啡的咖啡因含量差得很大，要按一天总量不超过 400 mg 来控制。",
+      "frequency": "daily",
+      "node": "anytime",
+      "priority": "high",
+      "priorityScore": 4.44,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 0,
+        "willpower": 0,
+        "benefit": 2
+      },
+      "actionLabel": "喝三到四杯咖啡，咖啡因总量不超过 400 mg，不加糖不加奶盖"
+    },
+    {
+      "entryId": "ch07-e009",
+      "chapterNumber": 7,
+      "entryNumber": 9,
+      "title": "居民医保每年 400 元不要断，困难户可减免",
+      "plainTalk": "个人一年交 400 元起，2025 年财政再按人头补不低于 700 元。特困人员全额资助，低保对象定额资助。断缴是有代价的：没在集中期参保、或者没连着交的，交完之后有 3 个月看病不给报，每多断 1 年原则上再多加 1 个月。",
+      "frequency": "yearly",
+      "node": "year-anytime",
+      "priority": "high",
+      "priorityScore": 4.44,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 0,
+        "willpower": 0,
+        "benefit": 2
+      },
+      "actionLabel": "居民医保 400 元不要断，困难户可减免"
+    },
+    {
+      "entryId": "ch16-e008",
+      "chapterNumber": 16,
+      "entryNumber": 8,
+      "title": "得过肾结石就把水喝到每天 2.5–3 升，盐降到 6 克以内",
+      "plainTalk": "第一次长了钙结石、又查不出原因的人，什么都不做的话，五年里约四分之一会再长。每天把水喝够的人，五年里复发的只有一成多，少了一半多。英国指南给的量是每天喝 2.5 到 3 升水，盐不超过 6 克。",
+      "frequency": "daily",
+      "node": "anytime",
+      "priority": "high",
+      "priorityScore": 4.44,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 0,
+        "willpower": 1,
+        "benefit": 2
+      },
+      "actionLabel": "得过肾结石就把水喝到 2.5–3 升，盐降到 6 克以内"
+    },
+    {
+      "entryId": "ch27-e001",
+      "chapterNumber": 27,
+      "entryNumber": 1,
+      "title": "准备怀孕就开始每天补 0.4 毫克叶酸，一直吃到孕早期满 3 个月",
+      "plainTalk": "怀孕前后每天吃一粒叶酸，孩子出现神经管缺陷的概率大约能降七成。神经管缺陷就是无脑儿、脊柱裂这一类的出生缺陷。已经生过一个这样的孩子的人，再生一个还出问题的概率，大约降到原来的三分之一。",
+      "frequency": "daily",
+      "node": "before-meal",
+      "priority": "high",
+      "priorityScore": 4.44,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 0,
+        "willpower": 1,
+        "benefit": 2
+      },
+      "actionLabel": "准备怀孕就开始补 0.4 毫克叶酸，一直吃到孕早期满 3 个月"
+    },
+    {
+      "entryId": "ch02-e033",
+      "chapterNumber": 2,
+      "entryNumber": 33,
+      "title": "每周吃四次以上辣椒",
+      "plainTalk": "意大利一项研究里，每周吃四次以上辣椒的人，同期死亡的概率比很少吃的人低约 23%，心血管死亡低约三分之一。",
+      "frequency": "weekly",
+      "node": "anytime",
+      "priority": "high",
+      "priorityScore": 4,
+      "evidenceGrade": "B",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 0,
+        "willpower": 0,
+        "benefit": 2
+      },
+      "actionLabel": "吃四次以上辣椒"
+    },
+    {
+      "entryId": "ch16-e007",
+      "chapterNumber": 16,
+      "entryNumber": 7,
+      "title": "确诊糖尿病就去查一次眼底，之后按医生给的间隔查；每年查一次脚",
+      "plainTalk": "糖尿病伤到眼底、伤到脚，在坏到看不见、烂起来之前几乎没有感觉。早查出来还有得治。2 型糖尿病确诊当时就查一次散瞳眼底，1 型在发病 5 年后开始查。查过一两次没事、血糖也达标的，可以放宽到一两年一次。脚每年查一次。",
+      "frequency": "yearly",
+      "node": "year-anytime",
+      "priority": "high",
+      "priorityScore": 3.53,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 0,
+        "willpower": 1,
+        "benefit": 2
+      },
+      "actionLabel": "确诊糖尿病就去查一次眼底，之后按医生给的间隔查；查一次脚"
+    },
+    {
+      "entryId": "ch30-e004",
+      "chapterNumber": 30,
+      "entryNumber": 4,
+      "title": "让孩子每天在户外待够 2 小时，这是目前不花钱、不用药的办法里，唯一有随机试验支持的防近视办法",
+      "plainTalk": "小学一年级每天多上 40 分钟户外课，三年后新近视的孩子从约四成降到约三成。卫健委给的量是每天白天在户外不少于 2 小时，或者一周加起来 14 小时。阴天也算数。",
+      "frequency": "daily",
+      "node": "anytime",
+      "priority": "high",
+      "priorityScore": 3.53,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 1,
+        "willpower": 1,
+        "benefit": 2
+      },
+      "actionLabel": "让孩子在户外待够 2 小时，这是目前不花钱、不用药的办法里，唯一有随机试验支持的…"
+    },
+    {
+      "entryId": "ch05-e002",
+      "chapterNumber": 5,
+      "entryNumber": 2,
+      "title": "每年三月到六月做一次个税汇算，专项附加扣除该填的填",
+      "plainTalk": "这几种人办下来通常能退到钱：全年只干了几个月，年中换过工作，或者子女教育、房贷、房租、赡养老人这些扣除没填。在手机上十几分钟就能办。如果你一年综合所得不到 12 万元，或者该补的税不到 400 元，可以不办。",
+      "frequency": "yearly",
+      "node": "year-h1",
+      "priority": "high",
+      "priorityScore": 3,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 0,
+        "willpower": 0,
+        "benefit": 1
+      },
+      "actionLabel": "三月到六月做一次个税汇算，专项附加扣除该填的填"
+    },
+    {
+      "entryId": "ch08-e009",
+      "chapterNumber": 8,
+      "entryNumber": 9,
+      "title": "每年免费查两次自己的征信报告，看有没有不是自己办的贷款和卡",
+      "plainTalk": "你每年可以在网上免费查两次自己的信用报告，十分钟就能查完。用人民银行征信中心官网或者手机银行查，别用第三方的「查征信」App。不良记录从这件事结束那天起留 5 年，过了就该删。有异议可以提，20 天内必须书面答复你。",
+      "frequency": "yearly",
+      "node": "year-anytime",
+      "priority": "high",
+      "priorityScore": 3,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 0,
+        "willpower": 0,
+        "benefit": 1
+      },
+      "actionLabel": "免费查两次自己的征信报告，看有没有不是自己办的贷款和卡"
+    },
+    {
+      "entryId": "ch02-e034",
+      "chapterNumber": 2,
+      "entryNumber": 34,
+      "title": "每天喝一两份奶或酸奶",
+      "plainTalk": "每天喝两份以上奶或者酸奶的人，同期死亡的概率比不喝的人低约 17%。",
+      "frequency": "daily",
+      "node": "anytime",
+      "priority": "high",
+      "priorityScore": 2.96,
+      "evidenceGrade": "B",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 0,
+        "willpower": 0,
+        "benefit": 2
+      },
+      "actionLabel": "喝一两份奶或酸奶"
+    },
+    {
+      "entryId": "ch02-e011",
+      "chapterNumber": 2,
+      "entryNumber": 11,
+      "title": "每天走到 7000–8000 步，或者每周累计快走 150–300 分钟",
+      "plainTalk": "每天走 7800 步左右的人，同期死亡的概率比只走 3500 步的人低约四成半。按时间算也一样，每周快走 150–300 分钟，比不运动低约三成。多到一定量就不再往下降了，60 岁以上走到 6000–8000 步就够。两种数法达标一个就行。",
+      "frequency": "daily",
+      "node": "anytime",
+      "priority": "high",
+      "priorityScore": 2.93,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 2,
+        "willpower": 1,
+        "benefit": 2
+      },
+      "actionLabel": "走到 7000–8000 步，或者累计快走 150–300 分钟"
+    },
+    {
+      "entryId": "ch16-e011",
+      "chapterNumber": 16,
+      "entryNumber": 11,
+      "title": "查出乙肝表面抗原阳性的，每半年做一次肝脏 B 超加甲胎蛋白，按医生评估决定吃不吃抗病毒药，吃上了别自己停",
+      "plainTalk": "身上带着乙肝病毒的人，每半年查一次 B 超和甲胎蛋白，在上海的试验里死于肝癌的少了近四成。血里病毒越多，以后得肝癌的越多。肝已经严重纤维化、硬化的人吃上抗病毒药，肝癌少了约一半。药多数要长期吃，自己停了病毒容易反弹。",
+      "frequency": "yearly",
+      "node": "year-anytime",
+      "priority": "high",
+      "priorityScore": 2.93,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 0,
+        "willpower": 2,
+        "benefit": 2
+      },
+      "actionLabel": "查出乙肝表面抗原阳性的，做一次肝脏 B 超加甲胎蛋白，按医生评估决定吃不吃抗病毒…"
+    },
+    {
+      "entryId": "ch02-e045",
+      "chapterNumber": 2,
+      "entryNumber": 45,
+      "title": "查出糖尿病前期（血糖偏高、还没到糖尿病），就靠少吃、减重、多动把糖尿病往后推，每半年复查一次血糖",
+      "plainTalk": "血糖偏高、还没到糖尿病的人，少吃、多动、减掉一点体重，得糖尿病的风险能低三到六成。中国大庆的试验跟了 30 年，这么做的人死亡的概率低约四分之一，平均多活约一年半。但美国和芬兰的同类试验没看出死亡率有差别。",
+      "frequency": "yearly",
+      "node": "year-anytime",
+      "priority": "high",
+      "priorityScore": 2.5,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 2,
+        "willpower": 2,
+        "benefit": 2
+      },
+      "actionLabel": "查出糖尿病前期（血糖偏高、还没到糖尿病），就靠少吃、减重、多动把糖尿病往后推，复…"
+    },
+    {
+      "entryId": "ch01-e008",
+      "chapterNumber": 1,
+      "entryNumber": 8,
+      "title": "35 岁以后只要超重，就去查一次空腹血糖，正常也每三年再查",
+      "plainTalk": "花几十块抽一管血，就能在一点症状都没有的时候查出糖尿病前期。美国官方的筛查建议是：35 到 70 岁、超重或肥胖的人去查。查出来正常的，每三年再查一次。美国按体重指数 25 算超重，对亚裔降到 23，中国标准是 24 就算超重。",
+      "frequency": "yearly",
+      "node": "year-anytime",
+      "priority": "high",
+      "priorityScore": 2.22,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 0,
+        "willpower": 0,
+        "benefit": 1
+      },
+      "actionLabel": "岁以后只要超重，就去查一次空腹血糖，正常也再查"
+    },
+    {
+      "entryId": "ch02-e025",
+      "chapterNumber": 2,
+      "entryNumber": 25,
+      "title": "每周喝三次以上茶",
+      "plainTalk": "有喝茶习惯的人，同期死亡的概率低约 15%。从 50 岁算起，平均多活 1.26 年，多出 1.41 年不得心血管病的时间。",
+      "frequency": "weekly",
+      "node": "anytime",
+      "priority": "high",
+      "priorityScore": 2.22,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 0,
+        "willpower": 0,
+        "benefit": 1
+      },
+      "actionLabel": "喝三次以上茶"
+    },
+    {
+      "entryId": "ch05-e004",
+      "chapterNumber": 5,
+      "entryNumber": 4,
+      "title": "每年重算一次手机和宽带套餐，用不上的降档，运营商不给转就投诉",
+      "plainTalk": "你用的老套餐，往往比现在新卖的贵几十块钱。一个月几十，一年就是几百块白扔。按规定，运营商没有正当理由，不能拒绝你转网，也不能拖着不给你办，更不能专门给转网的人单独设一套资费。它卡着不放，你就投诉。",
+      "frequency": "yearly",
+      "node": "year-anytime",
+      "priority": "high",
+      "priorityScore": 2.22,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 0,
+        "willpower": 1,
+        "benefit": 1
+      },
+      "actionLabel": "重算一次手机和宽带套餐，用不上的降档，运营商不给转就投诉"
+    },
+    {
+      "entryId": "ch12-e025",
+      "chapterNumber": 12,
+      "entryNumber": 25,
+      "title": "开公司、当个体户的，每年 1 月 1 日到 6 月 30 日上网报上一年的年报，没生意也要报，年报不收费",
+      "plainTalk": "开公司、当个体户的，每年上半年要上网报一次上一年的年报。不报就进经营异常名录，补报以后能申请移出。年报不收费，打电话说你漏报、让你去小程序或公众号交钱代办的是骗子，先自己上公示系统查。这样骗人的主犯被判过 10 年以上。",
+      "frequency": "yearly",
+      "node": "year-anytime",
+      "priority": "high",
+      "priorityScore": 2.22,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 0,
+        "willpower": 1,
+        "benefit": 1
+      },
+      "actionLabel": "开公司、当个体户的， 1 月 1 日到 6 月 30 日上网报上一年的年报，没生…"
+    },
+    {
+      "entryId": "ch30-e007",
+      "chapterNumber": 30,
+      "entryNumber": 7,
+      "title": "每年那次学生体检的报告单要自己看一遍，异常项当年带去医院查",
+      "plainTalk": "中小学校每年组织一次学生体检。报告单上要重点看的是超重、肥胖、营养不良、脊柱弯曲异常、视力不良、龋齿。别只看一眼身高体重就收起单子。这几项有异常，当年就带孩子去专科查清楚。",
+      "frequency": "yearly",
+      "node": "year-anytime",
+      "priority": "high",
+      "priorityScore": 2,
+      "evidenceGrade": "B",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 0,
+        "willpower": 0,
+        "benefit": 1
+      },
+      "actionLabel": "那次学生体检的报告单要自己看一遍，异常项当年带去医院查"
+    },
+    {
+      "entryId": "ch02-e016",
+      "chapterNumber": 2,
+      "entryNumber": 16,
+      "title": "每周做 30–60 分钟力量训练",
+      "plainTalk": "每周练 30–60 分钟力量的人，同期死亡的概率比不练的人低一到两成。再多练不会更好。力量和有氧一起做效果最好。",
+      "frequency": "weekly",
+      "node": "anytime",
+      "priority": "high",
+      "priorityScore": 1.76,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 1,
+        "willpower": 1,
+        "benefit": 1
+      },
+      "actionLabel": "做 30–60 分钟力量训练"
+    },
+    {
+      "entryId": "ch27-e005",
+      "chapterNumber": 27,
+      "entryNumber": 5,
+      "title": "有子痫前期高危因素的，孕 12 周后开始按医嘱每天一片小剂量阿司匹林",
+      "plainTalk": "子痫前期是孕期的一种高血压病。上一胎得过、怀多胎、有慢性高血压、孕前有糖尿病、有肾病或自身免疫病的人算高危。高危的人孕 12 周起按医嘱每天吃小剂量阿司匹林，子痫前期低约一成半，早产和孩子在生产前后死亡低约两成。其他人别自己吃。",
+      "frequency": "daily",
+      "node": "before-meal",
+      "priority": "high",
+      "priorityScore": 1.76,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 0,
+        "willpower": 1,
+        "benefit": 1
+      },
+      "actionLabel": "有子痫前期高危因素的，孕 12 周后开始按医嘱一片小剂量阿司匹林"
+    },
+    {
+      "entryId": "ch01-e026",
+      "chapterNumber": 1,
+      "entryNumber": 26,
+      "title": "备齐灭火器、灭火毯、逃生呼吸面罩和急救包，每年检查一次",
+      "plainTalk": "灭火器、灭火毯、逃生面罩、急救包，都在应急管理部那份 11 样的家庭应急清单里。一套几百元，买一次就行。上门做过家庭安全指导的那些研究里，伤害发生率低约四分之一。",
+      "frequency": "yearly",
+      "node": "year-anytime",
+      "priority": "high",
+      "priorityScore": 1.48,
+      "evidenceGrade": "B",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 0,
+        "willpower": 0,
+        "benefit": 1
+      },
+      "actionLabel": "备齐灭火器、灭火毯、逃生呼吸面罩和急救包，检查一次"
+    },
+    {
+      "entryId": "ch03-e005",
+      "chapterNumber": 3,
+      "entryNumber": 5,
+      "title": "把邮件和消息改成每天固定几次批量处理",
+      "plainTalk": "同一批人对比了两周。把邮件限制成每天只查 3 次的那一周，日常压力明显更低，而收发的邮件数量一样多。不加限制的时候，人平均每天要查 15.5 次。",
+      "frequency": "daily",
+      "node": "anytime",
+      "priority": "high",
+      "priorityScore": 1.48,
+      "evidenceGrade": "B",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 0,
+        "willpower": 1,
+        "benefit": 1
+      },
+      "actionLabel": "把邮件和消息改成固定几次批量处理"
+    },
+    {
+      "entryId": "ch27-e017",
+      "chapterNumber": 27,
+      "entryNumber": 17,
+      "title": "怀孕了不用把猫送走，猫砂换别人每天铲，肉要做熟、碰土戴手套",
+      "plainTalk": "弓形虫是一种寄生虫。怀孕时第一次染上，可能流产，孩子也可能眼睛和脑子受损。家里养猫并不让人更容易染上，猫不用送走。更要防的是吃没熟透的肉、碰土不洗手，猫砂换别人每天铲就行。",
+      "frequency": "daily",
+      "node": "anytime",
+      "priority": "high",
+      "priorityScore": 1.48,
+      "evidenceGrade": "B",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 0,
+        "willpower": 1,
+        "benefit": 1
+      },
+      "actionLabel": "怀孕了不用把猫送走，猫砂换别人铲，肉要做熟、碰土戴手套"
+    },
+    {
+      "entryId": "ch02-e027",
+      "chapterNumber": 2,
+      "entryNumber": 27,
+      "title": "每天吃够 5 份（约 400 g）水果蔬菜",
+      "plainTalk": "每天多吃 200 g 蔬菜水果，同期死亡的概率低约一成。每天吃够 5 份的人，比只吃 2 份的人低约 13%。美国的研究里，再往上吃不会更低。",
+      "frequency": "daily",
+      "node": "anytime",
+      "priority": "high",
+      "priorityScore": 1.46,
+      "evidenceGrade": "A",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 1,
+        "willpower": 1,
+        "benefit": 1
+      },
+      "actionLabel": "吃够 5 份（约 400 g）水果蔬菜"
+    },
+    {
+      "entryId": "ch17-e008",
+      "chapterNumber": 17,
+      "entryNumber": 8,
+      "title": "家里有人长期卧床，把压疮当头号敌人：上电动气垫床、定时翻身、每天看一遍骨头突出的地方",
+      "plainTalk": "髋部骨折开刀前就有压疮的老人，30 天内去世的可能性高约两成。换电动气垫床，新长压疮的少约六成。ICU 里靠传感器提醒把按时翻身做到位，少约七成，让人趴着的压疮反而多得多。每天看一遍骶尾、足跟、髋部、肩背，发现压了不褪的红，当天找护士或医生。",
+      "frequency": "daily",
+      "node": "anytime",
+      "priority": "high",
+      "priorityScore": 1.45,
+      "evidenceGrade": "B",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 2,
+        "willpower": 2,
+        "benefit": 2
+      },
+      "actionLabel": "家里有人长期卧床，把压疮当头号敌人：上电动气垫床、定时翻身、看一遍骨头突出的地方"
+    },
+    {
+      "entryId": "ch02-e010",
+      "chapterNumber": 2,
+      "entryNumber": 10,
+      "title": "认真刷牙，每天清一次牙缝，缺了牙去看牙医",
+      "plainTalk": "日本一项研究里，用牙线或牙缝刷的人，同期死亡的概率低约一成。牙掉光的老人，死亡的概率高约九成。剩不到 20 颗牙的，高约一倍。电动牙刷比手动刷多去掉一到两成牙菌斑，牙龈发炎也轻一些，但这点差别有多大用还说不清。",
+      "frequency": "daily",
+      "node": "anytime",
+      "priority": "medium",
+      "priorityScore": 1.18,
+      "evidenceGrade": "B",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 0,
+        "willpower": 1,
+        "benefit": 1
+      },
+      "actionLabel": "认真刷牙，清一次牙缝，缺了牙去看牙医"
+    },
+    {
+      "entryId": "ch03-e008",
+      "chapterNumber": 3,
+      "entryNumber": 8,
+      "title": "睡前一小时不看发光屏幕，要看就看纸书或不开屏幕灯的墨水屏",
+      "plainTalk": "睡前读发光屏幕，比读纸书晚约 10 分钟才睡着。褪黑素被压低 55%。第二天生物钟往后推 1.5 小时以上，早上更困，要更久才清醒。",
+      "frequency": "daily",
+      "node": "morning",
+      "priority": "medium",
+      "priorityScore": 1.18,
+      "evidenceGrade": "B",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 0,
+        "willpower": 2,
+        "benefit": 1
+      },
+      "actionLabel": "一小时不看发光屏幕，要看就看纸书或不开屏幕灯的墨水屏"
+    },
+    {
+      "entryId": "ch16-e013",
+      "chapterNumber": 16,
+      "entryNumber": 13,
+      "title": "有糖尿病的每年查一次尿白蛋白肌酐比和血肌酐，有高血压的也要查，早点发现慢性肾病",
+      "plainTalk": "中国得了慢性肾病的成年人里，只有一成知道自己有病。糖尿病病人每年验一次尿和血，能早点查出来。查出尿蛋白偏高的，吃上达格列净这种药，肾功能坏下去、走到透析或死亡的情况合起来少约四成，死亡少约三成。",
+      "frequency": "yearly",
+      "node": "year-anytime",
+      "priority": "medium",
+      "priorityScore": 1.18,
+      "evidenceGrade": "B",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 0,
+        "willpower": 1,
+        "benefit": 1
+      },
+      "actionLabel": "有糖尿病的查一次尿白蛋白肌酐比和血肌酐，有高血压的也要查，早点发现慢性肾病"
+    },
+    {
+      "entryId": "ch20-e016",
+      "chapterNumber": 20,
+      "entryNumber": 16,
+      "title": "孩子出生后就每天喂 400 国际单位维生素 D，吃母乳的尤其别漏，足月的 6 个月内一般不用另补钙",
+      "plainTalk": "母乳里维生素 D 很少，婴儿又不宜多晒太阳，所以要每天补。土耳其农村没补的孩子一年里有 3.8% 得了佝偻病，补了的一个都没有。量按医生说的给。正常足月的孩子 6 个月以内一般不用另外补钙。",
+      "frequency": "daily",
+      "node": "anytime",
+      "priority": "medium",
+      "priorityScore": 1.18,
+      "evidenceGrade": "B",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 0,
+        "willpower": 1,
+        "benefit": 1
+      },
+      "actionLabel": "孩子出生后就喂 400 国际单位维生素 D，吃母乳的尤其别漏，足月的 6 个月内…"
+    },
+    {
+      "entryId": "ch30-e005",
+      "chapterNumber": 30,
+      "entryNumber": 5,
+      "title": "0 到 3 岁不给屏幕，3 到 6 岁尽量不给，中小学生非学习用途每天不超过 1 小时",
+      "plainTalk": "国家卫健委要求 0 到 3 岁不给屏幕，3 到 6 岁尽量别碰。中小学生不为学习用的，一次不超过 15 分钟、一天不超过 1 小时。理由是长时间近距离用眼会让近视来得早。屏幕和近视的证据没这么硬，真正试出效果的是每天户外 2 小时。",
+      "frequency": "daily",
+      "node": "anytime",
+      "priority": "medium",
+      "priorityScore": 1.18,
+      "evidenceGrade": "B",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 0,
+        "willpower": 2,
+        "benefit": 1
+      },
+      "actionLabel": "0 到 3 岁不给屏幕，3 到 6 岁尽量不给，中小学生非学习用途不超过 1 小…"
+    },
+    {
+      "entryId": "ch33-e005",
+      "chapterNumber": 33,
+      "entryNumber": 5,
+      "title": "长期坐轮椅的，坐垫换成减压型，每天看一遍坐骨和尾骨",
+      "plainTalk": "养老院里用减压坐垫的老人，比用普通分段海绵坐垫的，坐骨那里的压疮明显更少，但把尾骨一起算就没看出差别。试验里所有人都先配了合身的轮椅，所以轮椅本身也要按人的尺寸配，别买个通用款就算了。",
+      "frequency": "daily",
+      "node": "anytime",
+      "priority": "medium",
+      "priorityScore": 1.18,
+      "evidenceGrade": "B",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 1,
+        "time": 0,
+        "willpower": 1,
+        "benefit": 1
+      },
+      "actionLabel": "长期坐轮椅的，坐垫换成减压型，看一遍坐骨和尾骨"
+    },
+    {
+      "entryId": "ch14-e011",
+      "chapterNumber": 14,
+      "entryNumber": 11,
+      "title": "每年查一次自己名下有几张电话卡、几张银行卡，查出不是自己办的就去注销",
+      "plainTalk": "有人会冒用别人的身份证办电话卡去行骗，本人往往不知道。现在有免费的官方查询，能查你名下有几张电话卡、手机号绑了几个 App 账号、有哪些银联卡。查出不认识的，找运营商或银行核实、注销。",
+      "frequency": "yearly",
+      "node": "year-anytime",
+      "priority": "medium",
+      "priorityScore": 1,
+      "evidenceGrade": "C",
+      "scope": "日常其他",
+      "costTags": {
+        "money": 0,
+        "time": 0,
+        "willpower": 0,
+        "benefit": 1
+      },
+      "actionLabel": "查一次自己名下有几张电话卡、几张银行卡，查出不是自己办的就去注销"
+    }
+  ]
+}

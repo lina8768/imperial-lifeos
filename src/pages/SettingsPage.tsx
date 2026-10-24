@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { Download, Upload, ShieldCheck, BookMarked, AlertTriangle } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Download, Upload, ShieldCheck, BookMarked, AlertTriangle, ScrollText } from "lucide-react";
 import { PageHeader, Button, Badge, Input, Select } from "@/components/ui";
 import { ConfirmDialog } from "@/components/Dialog";
 import { exportAll, downloadBackup, parseBackup, restoreBackup, type ImportPreview } from "@/storage/repositories/backupService";
@@ -72,6 +73,19 @@ export default function SettingsPage() {
       <PageHeader title="内务府" subtitle="备份、恢复与典籍档案" />
 
       <div className="space-y-6">
+        {/* 内政纲领 */}
+        <section className="panel p-5">
+          <h2 className="mb-3 flex items-center gap-2 font-serif text-base font-semibold">
+            <ScrollText size={16} className="text-teal" /> 内政纲领
+          </h2>
+          <p className="mb-4 text-xs leading-relaxed text-ink-soft">
+            你在引导时勾选的周期事项，会自动生成每日 / 每周 / 每年待办。随时可重选：增加新事项、取消不再坚持的。
+          </p>
+          <Link to="/onboarding">
+            <Button variant="secondary">重选内政纲领</Button>
+          </Link>
+        </section>
+
         {/* 备份与恢复 */}
         <section className="panel p-5">
           <h2 className="mb-3 flex items-center gap-2 font-serif text-base font-semibold">
