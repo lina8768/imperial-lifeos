@@ -19,7 +19,7 @@ describe("Highlight 组件", () => {
 });
 
 describe("应用外壳与路由（刷新后数据仍在的持久化冒烟）", () => {
-  it("渲染侧边导航的八个入口", async () => {
+  it("渲染顶部导航与全部入口", async () => {
     const { AppShell } = await import("@/components/AppShell");
     render(
       <HashRouter>
@@ -28,7 +28,7 @@ describe("应用外壳与路由（刷新后数据仍在的持久化冒烟）", (
         </AppShell>
       </HashRouter>
     );
-    for (const label of ["御前总览", "奏折与政务", "日历", "内政典籍", "国库与国情", "起居注", "治理复盘", "内务府"]) {
+    for (const label of ["总览", "今日任务", "日历", "人生知识库", "数据追踪", "个人日志", "周期复盘", "内务府"]) {
       expect(screen.getAllByText(label).length).toBeGreaterThan(0);
     }
   });

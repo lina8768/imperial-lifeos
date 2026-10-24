@@ -183,6 +183,15 @@ export async function addTaskNote(taskId: string, text: string): Promise<TaskLog
   return addLog(taskId, "note", null, null, text.trim());
 }
 
+/** 保证日志时间戳单调递增（同毫秒内连续记录时 +1ms，稳定倒序展示） */
+let lastLogTs = 0;
+function nextLogTs(): string {
+  let ts = Date.now();
+  if (ts <= lastLogTs) ts = lastLogTs + 1;
+  lastLogTs = ts;
+  return new Date(ts).toISOString();
+}
+
 async function addLog(
   taskId: string,
   type: TaskLog["type"],
@@ -197,7 +206,7 @@ async function addLog(
     fromStatus,
     toStatus,
     text,
-    createdAt: nowISO(),
+    createdAt: nextLogTs(),
   };
   await db.taskLogs.add(log);
   return log;

@@ -12,10 +12,10 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const VARIANT_CLASSES: Record<ButtonVariant, string> = {
-  primary: "bg-vermilion text-white hover:bg-vermilion-deep border-transparent",
+  primary: "bg-teal text-white hover:bg-teal-deep border-transparent",
   secondary: "bg-white text-ink border-line hover:border-ink-faint",
   ghost: "bg-transparent text-ink-soft border-transparent hover:bg-paper hover:text-ink",
-  danger: "bg-white text-danger border-danger/40 hover:bg-danger hover:text-white",
+  danger: "bg-white text-vermilion border-vermilion/40 hover:bg-vermilion hover:text-white",
 };
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -38,12 +38,13 @@ Button.displayName = "Button";
 
 /* ============ Badge ============ */
 
-export function Badge({ children, tone = "neutral", className }: { children: ReactNode; tone?: "neutral" | "vermilion" | "jade" | "gold" | "danger" | "gray"; className?: string }) {
+export function Badge({ children, tone = "neutral", className }: { children: ReactNode; tone?: "neutral" | "vermilion" | "jade" | "gold" | "danger" | "gray" | "teal"; className?: string }) {
   const tones = {
     neutral: "bg-paper text-ink-soft border-line",
+    teal: "bg-teal-soft text-teal-deep border-teal/20",
     vermilion: "bg-vermilion-soft text-vermilion-deep border-vermilion/20",
-    jade: "bg-jade-soft text-jade-deep border-jade/20",
-    gold: "bg-gold-soft text-gold border-gold/25",
+    jade: "bg-jade-soft text-jade-deep border-jade/30",
+    gold: "bg-gold-soft text-gold-deep border-gold/40",
     danger: "bg-vermilion-soft text-danger border-danger/25",
     gray: "bg-paper text-ink-faint border-line",
   };

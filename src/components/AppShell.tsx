@@ -1,145 +1,125 @@
 import { type ReactNode } from "react";
 import { NavLink } from "react-router-dom";
-import {
-  ScrollText, LayoutDashboard, CalendarDays, BookOpen, Landmark,
-  NotebookPen, ClipboardList, Settings2, MoreHorizontal,
-} from "lucide-react";
+import { MoreHorizontal } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useBookVersionInfo } from "@/components/useBookVersionInfo";
 
 const NAV_ITEMS = [
-  { to: "/", label: "御前总览", icon: LayoutDashboard },
-  { to: "/tasks", label: "奏折与政务", icon: ScrollText },
-  { to: "/calendar", label: "日历", icon: CalendarDays },
-  { to: "/library", label: "内政典籍", icon: BookOpen },
-  { to: "/metrics", label: "国库与国情", icon: Landmark },
-  { to: "/journals", label: "起居注", icon: NotebookPen },
-  { to: "/reviews", label: "治理复盘", icon: ClipboardList },
-  { to: "/settings", label: "内务府", icon: Settings2 },
+  { to: "/", label: "总览" },
+  { to: "/tasks", label: "今日任务" },
+  { to: "/calendar", label: "日历" },
+  { to: "/library", label: "人生知识库" },
+  { to: "/metrics", label: "数据追踪" },
+  { to: "/journals", label: "个人日志" },
+  { to: "/reviews", label: "周期复盘" },
 ];
 
-const MOBILE_MAIN = NAV_ITEMS.slice(0, 4);
-const MOBILE_MORE = NAV_ITEMS.slice(4);
+const MORE_ITEMS = [{ to: "/settings", label: "内务府" }];
 
 export function AppShell({ children }: { children: ReactNode }) {
-  const version = useBookVersionInfo();
   return (
-    <div className="min-h-screen bg-paper lg:flex">
-      {/* 桌面侧边栏 */}
-      <aside className="sticky top-0 hidden h-screen w-56 shrink-0 flex-col border-r border-line bg-card lg:flex">
-        <div className="flex items-center gap-3 px-5 py-5">
-          <div className="seal h-9 w-9 border-vermilion bg-vermilion text-base text-white">御</div>
-          <div>
-            <div className="font-serif text-base font-semibold leading-tight">御前内政</div>
-            <div className="text-[10px] tracking-widest text-ink-faint">IMPERIAL LIFEOS</div>
-          </div>
-        </div>
-        <nav className="flex-1 space-y-0.5 overflow-y-auto px-3 py-2">
-          {NAV_ITEMS.map(({ to, label, icon: Icon }) => (
-            <NavLink
-              key={to}
-              to={to}
-              end={to === "/"}
-              className={({ isActive }) =>
-                cn(
-                  "flex items-center gap-3 rounded px-3 py-2 text-sm transition-colors",
-                  isActive
-                    ? "bg-vermilion-soft font-medium text-vermilion-deep"
-                    : "text-ink-soft hover:bg-paper hover:text-ink"
-                )
-              }
-            >
-              <Icon size={16} strokeWidth={1.75} />
-              {label}
-            </NavLink>
-          ))}
-        </nav>
-        <div className="border-t border-line px-5 py-3 text-[10px] leading-relaxed text-ink-faint">
-          <p>知识库 · 高性价比人生指南</p>
-          <p className="truncate">{version ? `版本 ${version.commitSha.slice(0, 8)}` : "加载中…"}</p>
-          <p>
-            <a
-              className="hover:text-vermilion"
-              href="https://github.com/eternity4719/HowToLiveBetter"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CC BY 4.0 · 上游仓库
-            </a>
-          </p>
-        </div>
-      </aside>
+    <div className="min-h-screen bg-paper">
+      {/* 顶部导航（参考图 04） */}
+      <header className="sticky top-0 z-30 border-b border-line bg-card/95 backdrop-blur">
+        <div className="mx-auto flex h-14 max-w-6xl items-center gap-2 px-4 lg:gap-6 lg:px-6">
+          {/* 品牌 */}
+          <NavLink to="/" className="flex shrink-0 items-center gap-2.5">
+            <span className="seal h-8 w-8 rounded-lg bg-vermilion text-base text-white">御</span>
+            <span className="hidden sm:block">
+              <span className="block font-serif text-[15px] font-bold leading-tight tracking-wide">
+                御前内政 <span className="text-ink-faint">Imperial LifeOS</span>
+              </span>
+            </span>
+          </NavLink>
 
-      {/* 移动端顶栏 */}
-      <div className="sticky top-0 z-20 flex items-center justify-between border-b border-line bg-card px-4 py-3 lg:hidden">
-        <div className="flex items-center gap-2">
-          <div className="seal h-7 w-7 border-vermilion bg-vermilion text-sm text-white">御</div>
-          <span className="font-serif text-sm font-semibold">御前内政</span>
+          {/* 桌面横向导航 */}
+          <nav className="hidden min-w-0 flex-1 items-center gap-0.5 overflow-x-auto lg:flex" aria-label="主导航">
+            {NAV_ITEMS.map(({ to, label }) => (
+              <NavLink
+                key={to}
+                to={to}
+                end={to === "/"}
+                className={({ isActive }) => cn("nav-tab", isActive && "nav-tab-active")}
+              >
+                {label}
+              </NavLink>
+            ))}
+            {MORE_ITEMS.map(({ to, label }) => (
+              <NavLink
+                key={to}
+                to={to}
+                className={({ isActive }) => cn("nav-tab", isActive && "nav-tab-active")}
+              >
+                {label}
+              </NavLink>
+            ))}
+          </nav>
+
+          {/* 移动端更多 */}
+          <details className="group relative ml-auto lg:hidden">
+            <summary className="flex list-none cursor-pointer items-center gap-1 rounded-lg px-2.5 py-1.5 text-sm text-ink-soft hover:bg-paper [&::-webkit-details-marker]:hidden">
+              <MoreHorizontal size={18} />
+            </summary>
+            <div className="absolute right-0 top-full z-40 mt-1 w-40 rounded-xl border border-line bg-card p-1.5 shadow-pop">
+              {[...NAV_ITEMS.slice(2), ...MORE_ITEMS].map(({ to, label }) => (
+                <NavLink
+                  key={to}
+                  to={to}
+                  className="block rounded-lg px-3 py-2.5 text-sm text-ink-soft hover:bg-paper hover:text-ink"
+                >
+                  {label}
+                </NavLink>
+              ))}
+            </div>
+          </details>
         </div>
-        <MobileMoreSheet />
-      </div>
+      </header>
 
       {/* 内容区 */}
-      <main className="min-w-0 flex-1 pb-20 lg:pb-0">
-        <div className="mx-auto max-w-5xl px-4 py-6 sm:px-6 lg:px-10 lg:py-8">{children}</div>
+      <main className="pb-16 lg:pb-10">
+        <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-6 lg:py-8">{children}</div>
       </main>
 
       {/* 移动端底部导航 */}
-      <nav className="fixed inset-x-0 bottom-0 z-20 flex border-t border-line bg-card lg:hidden">
-        {MOBILE_MAIN.map(({ to, label, icon: Icon }) => (
-          <BottomNavLink key={to} to={to} label={label} icon={Icon} />
+      <nav className="fixed inset-x-0 bottom-0 z-30 flex border-t border-line bg-card lg:hidden" aria-label="底部导航">
+        {[
+          { to: "/", label: "总览" },
+          { to: "/tasks", label: "任务" },
+          { to: "/library", label: "典籍" },
+          { to: "/metrics", label: "追踪" },
+        ].map(({ to, label }) => (
+          <NavLink
+            key={to}
+            to={to}
+            end={to === "/"}
+            className={({ isActive }) =>
+              cn(
+                "flex flex-1 flex-col items-center gap-0.5 py-2 text-[10px]",
+                isActive ? "font-medium text-teal" : "text-ink-faint"
+              )
+            }
+          >
+            {label}
+          </NavLink>
         ))}
-        <MobileMoreSheetButton />
+        <MobileMoreButton />
       </nav>
     </div>
   );
 }
 
-function BottomNavLink({ to, label, icon: Icon }: { to: string; label: string; icon: typeof ScrollText }) {
+function MobileMoreButton() {
   return (
-    <NavLink
-      to={to}
-      end={to === "/"}
-      className={({ isActive }) =>
-        cn(
-          "flex flex-1 flex-col items-center gap-1 py-2 text-[10px]",
-          isActive ? "text-vermilion" : "text-ink-faint"
-        )
-      }
-    >
-      <Icon size={18} strokeWidth={1.75} />
-      {label}
-    </NavLink>
-  );
-}
-
-function MobileMoreSheet() {
-  return (
-    <MobileMoreSheetButton>
-      <MoreHorizontal size={18} strokeWidth={1.75} />
-    </MobileMoreSheetButton>
-  );
-}
-
-function MobileMoreSheetButton({ children }: { children?: ReactNode }) {
-  return (
-    <details className="group relative">
-      <summary className="flex list-none items-center justify-center px-4 py-2 text-ink-soft [&::-webkit-details-marker]:hidden">
-        {children ?? (
-          <>
-            <MoreHorizontal size={18} strokeWidth={1.75} />
-            <span className="text-[10px]">更多</span>
-          </>
-        )}
+    <details className="group relative flex-1">
+      <summary className="flex list-none cursor-pointer flex-col items-center gap-0.5 py-2 text-[10px] text-ink-faint [&::-webkit-details-marker]:hidden">
+        更多
       </summary>
-      <div className="absolute right-0 top-full z-30 mt-1 w-44 rounded border border-line bg-card p-1 shadow-pop">
-        {MOBILE_MORE.map(({ to, label, icon: Icon }) => (
+      <div className="absolute bottom-full right-0 z-40 mb-1 w-40 rounded-xl border border-line bg-card p-1.5 shadow-pop">
+        {[...NAV_ITEMS.slice(2), ...MORE_ITEMS].map(({ to, label }) => (
           <NavLink
             key={to}
             to={to}
-            className="flex items-center gap-3 rounded px-3 py-2.5 text-sm text-ink-soft hover:bg-paper hover:text-ink"
+            className="block rounded-lg px-3 py-2.5 text-sm text-ink-soft hover:bg-paper hover:text-ink"
           >
-            <Icon size={16} strokeWidth={1.75} />
             {label}
           </NavLink>
         ))}

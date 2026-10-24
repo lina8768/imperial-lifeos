@@ -27,6 +27,16 @@ const FREQ_LABELS: Record<MetricFrequency, string> = {
 
 type RangeKey = "7d" | "30d" | "90d" | "all";
 
+/** 常用指标模板：来自典籍中证据 A 级、日常可量化的条目 */
+const METRIC_TEMPLATES = [
+  { name: "体重", unit: "kg", dataType: "number" as MetricDataType, frequency: "weekly" as MetricFrequency },
+  { name: "睡眠时长", unit: "小时", dataType: "duration" as MetricDataType, frequency: "daily" as MetricFrequency },
+  { name: "运动", unit: "次", dataType: "count" as MetricDataType, frequency: "daily" as MetricFrequency },
+  { name: "血压高压", unit: "mmHg", dataType: "number" as MetricDataType, frequency: "weekly" as MetricFrequency },
+  { name: "月开销", unit: "元", dataType: "money" as MetricDataType, frequency: "monthly" as MetricFrequency },
+  { name: "今日锻炼", unit: "是/否", dataType: "boolean" as MetricDataType, frequency: "daily" as MetricFrequency },
+];
+
 export default function MetricsPage() {
   const [params] = useSearchParams();
   const [metrics, setMetrics] = useState<Metric[] | null>(null);
@@ -57,6 +67,11 @@ export default function MetricsPage() {
     await refresh();
   }
 
+  async function onAddTemplate(tpl: (typeof METRIC_TEMPLATES)[number]) {
+    await createMetric({ name: tpl.name, unit: tpl.unit, dataType: tpl.dataType, frequency: tpl.frequency });
+    await refresh();
+  }
+
   return (
     <div>
       <PageHeader
@@ -76,9 +91,25 @@ export default function MetricsPage() {
           title="国库尚空"
           hint="创建体重、睡眠时长、月开销等指标，持续记录后可看趋势。"
           action={
-            <Button variant="primary" onClick={() => setCreating(true)}>
-              <Plus size={14} /> 开列指标
-            </Button>
+            <div className="flex flex-col items-center gap-3">
+              <Button variant="primary" onClick={() => setCreating(true)}>
+                <Plus size={14} /> 开列指标
+              </Button>
+              <div>
+                <p className="mb-2 text-[11px] text-ink-faint">或一键开列常用健康指标（来自典籍高性价比条目）：</p>
+                <div className="flex flex-wrap justify-center gap-1.5">
+                  {METRIC_TEMPLATES.map((tpl) => (
+                    <button
+                      key={tpl.name}
+                      onClick={() => void onAddTemplate(tpl)}
+                      className="rounded-full border border-teal/30 bg-teal-soft/50 px-3 py-1 text-xs text-teal-deep transition-colors hover:bg-teal-soft"
+                    >
+                      + {tpl.name}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
           }
         />
       ) : selected ? (

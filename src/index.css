@@ -10,24 +10,24 @@
     @apply bg-paper text-ink font-sans;
   }
   ::selection {
-    @apply bg-vermilion-soft;
+    @apply bg-teal-soft;
   }
 }
 
 @layer components {
   /* 徽记印章风格小标 */
   .seal {
-    @apply inline-flex items-center justify-center rounded border font-serif;
+    @apply inline-flex items-center justify-center rounded font-serif;
   }
-  /* 卡片 */
+  /* 卡片：参考图风格，白底 + 细边 + 柔和投影 */
   .panel {
-    @apply rounded border border-line bg-card shadow-card;
+    @apply rounded-xl border border-line bg-card shadow-card;
   }
   /* 输入框 */
   .field {
-    @apply w-full rounded border border-line bg-white px-3 py-2 text-sm text-ink
-      placeholder:text-ink-faint focus:border-vermilion focus:outline-none
-      focus:ring-1 focus:ring-vermilion/30 disabled:bg-paper disabled:text-ink-faint;
+    @apply w-full rounded-lg border border-line bg-white px-3 py-2 text-sm text-ink
+      placeholder:text-ink-faint focus:border-teal focus:outline-none
+      focus:ring-1 focus:ring-teal/25 disabled:bg-paper disabled:text-ink-faint;
   }
   /* 表单标签 */
   .label {
@@ -36,6 +36,14 @@
   /* 高亮搜索命中 */
   .hl {
     @apply rounded-sm bg-gold-soft px-0.5 font-medium text-vermilion-deep;
+  }
+  /* 顶部导航 tab */
+  .nav-tab {
+    @apply relative flex items-center gap-1.5 whitespace-nowrap rounded-lg px-2.5 py-1.5
+      text-[13px] text-ink-soft transition-colors hover:bg-paper hover:text-ink;
+  }
+  .nav-tab-active {
+    @apply bg-teal-soft font-medium text-teal-deep;
   }
 }
 

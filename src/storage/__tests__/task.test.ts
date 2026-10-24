@@ -96,6 +96,8 @@ describe("筛选与逾期", () => {
   it("过程记录（note）写入并按时间倒序", async () => {
     const t = await createTask({ title: "装修比价" });
     await addTaskNote(t.id, "问了第一家，报价 8 万");
+    // 确保两条记录时间戳可区分（人打字天然有间隔，此处显式等待）
+    await new Promise((r) => setTimeout(r, 5));
     await addTaskNote(t.id, "第二家 6.5 万");
     const logs = await getTaskLogs(t.id);
     expect(logs.filter((l) => l.type === "note").length).toBe(2);
