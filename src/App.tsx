@@ -39,6 +39,13 @@ export default function App() {
         await ensureRecurringTasksForToday();
       }
     })();
+
+    // 引导页「确立纲领」完成后，立即切换到正常界面
+    function onOnboardingDone() {
+      setCompleted(true);
+    }
+    window.addEventListener("imperial:onboarding-done", onOnboardingDone);
+    return () => window.removeEventListener("imperial:onboarding-done", onOnboardingDone);
   }, []);
 
   if (checking) return <Loading />;

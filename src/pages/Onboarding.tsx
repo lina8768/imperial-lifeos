@@ -70,11 +70,21 @@ export default function Onboarding({ rerun = false }: { rerun?: boolean }) {
   }
 
   async function finish() {
+    if (selected.size === 0) return;
     setSubmitting(true);
-    const ids = Array.from(selected);
-    await setSelectedRecurring(ids);
-    await setOnboardingCompleted(true);
-    await ensureRecurringTasksForToday();
+    try {
+      const ids = Array.from(selected);
+      await setSelectedRecurring(ids);
+      await setOnboardingCompleted(true);
+      await ensureRecurringTasksForToday();
+      // 通知 App 切换到正常界面（App 监听此事件后 setCompleted(true)）
+      window.dispatchEvent(new CustomEvent("imperial:onboarding-done"));
+    } catch (e) {
+      console.error("确立纲领失败:", e);
+      setSubmitting(false);
+      alert("确立纲领时出错，请重试或查看控制台：" + (e instanceof Error ? e.message : String(e)));
+      return;
+    }
     setSubmitting(false);
     nav("/", { replace: true });
   }
